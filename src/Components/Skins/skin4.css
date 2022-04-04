@@ -1,0 +1,135 @@
+.skin4-cont {
+  border: 1px solid red;
+  width: 21cm;
+  height: 29.7cm;
+}
+.skin4-incon {
+  width: 96%;
+  height: 100%;
+  padding: 0% 0% 0% 2%;
+}
+.box1 {
+  height: 7%;
+  width: 100%;
+}
+.box2 {
+  height: 8%;
+  width: 100%;
+}
+.box {
+  /* border: 1px solid green; */
+  height: 16.5%;
+}
+.inner-box {
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+}
+.inner-box-1 {
+  height: 100%;
+  width: 100%;
+}
+.inner-box-2 {
+  height: 100%;
+  width: 100%;
+}
+.Personal-det-box {
+  /* background: brown; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.pbox1 {
+  width: 50%;
+
+  height: 100%;
+}
+.pbox1[info="ph@en"] {
+}
+.pbox1[info="ph@en"] div {
+  margin: 2%;
+}
+.pbox1[info="address"] {
+}
+.pbox1[info="address"] div {
+  text-align: end;
+
+  margin: 2%;
+
+  text-align: right;
+}
+.inner-box-1[name="box1"] span {
+  font-size: xx-large;
+  text-transform: uppercase;
+}
+.border1 {
+  background: #f1f0f0;
+  height: 13%;
+  width: 100%;
+}
+.border2 {
+  background: #f1f0f0;
+  height: 30%;
+  width: 100%;
+}
+.border1 span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.border2 span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.school-info-skin4 {
+  margin-top: 5%;
+  display: flex;
+  /* background-color: antiquewhite; */
+  height: 66%;
+  width: 90%;
+  margin-left: 5%;
+}
+.school-con {
+  /* border: 1px solid; */
+  height: 49%;
+  width: 50%;
+  /* background-color: blueviolet; */
+  /* padding: 1%; */
+  text-align: center;
+}
+/* 
+    .school-con2 {
+      border: 1px solid;
+      height: 90%;
+      width: 50%; 
+      padding: 1%;
+      display: flex;
+      flex-direction: column; 
+      text-align: center;
+    } */
+.school-con-box {
+  border: 1px solid;
+  margin: 2%;
+}
+.exp-info-skin4 {
+}
+.exp-info-skin4 div {
+}
+.exp-info-skin4-box {
+  font-weight: bold;
+  font-size: large;
+}
+.exp-info-skin4-box2 {
+  margin-left: 2%;
+}
+.skill-box div ul li {
+  margin-left: 6%;
+  /* background-color: red; */
+}
+.skill-box div ul {
+  display: flex;
+}
+.d-box {
+  height: 12%;
+}
