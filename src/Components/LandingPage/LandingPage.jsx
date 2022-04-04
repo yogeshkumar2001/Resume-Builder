@@ -66,7 +66,7 @@ class LandingPage extends Component {
                             }
                         </div>
                         <div className="right-cont1">
-                            <img src="./images/banner2.png" alt=""></img>
+                            <img src="http://localhost:3000/images/banner2.png" alt=""></img>
                         </div>
                     </div>
                 </div>
