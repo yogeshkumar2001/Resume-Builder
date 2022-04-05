@@ -142,7 +142,7 @@ class Final extends React.Component {
           this.state.confirm == false ? (<div className="resume-view-container">
             <div className="resume-view" >
               <React.Fragment>
-                {this.state.mobile == true ? <h1>download your resume for view </h1> : tskin}
+                {this.state.mobile == true ? <h1>download your resume for view </h1> : ""}
                 {tskin}
                 {/* {this.state.mobile ==true ? (h1)} */}
               </React.Fragment>

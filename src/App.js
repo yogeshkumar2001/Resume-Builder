@@ -53,24 +53,6 @@ class App extends Component {
       });
   };
   
-  IsTAPage = () => {
-    console.log("inHomePage")
-    let isTemplatePage = document.getElementsByClassName("templates-container");
-    let isAboutUspage = document.getElementsByClassName("about-us-container");
-    console.log(isTemplatePage);
-    console.log(isAboutUspage);
-
-    if (isTemplatePage.length != 0 || isAboutUspage.length !=0 ) {
-      this.setState({
-        isTAPage: true
-      })
-    }
-    else {
-      this.setState({
-        isTAPage: false
-      })
-    }
-  } 
 login = (id, pw) => {
     // log in to firebase !!!!
     firebaseApp

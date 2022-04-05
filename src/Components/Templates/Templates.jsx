@@ -4,12 +4,13 @@ import firebaseApp from "../../firebase/firebaseConfig";
 import firebase from "firebase";
 import initialState from "../../util/initialState";
 import { Link } from "react-router-dom";
+import skin1 from  "../../assets/images/skin1.png"
 
 class Templates extends Component {
   state = {
     skins: [
-      { id: "skin1", path: "./images/skin1.png" },
-      { id: "skin2", path: "./images/skin2.png" },
+      { id: "skin1", path: skin1 },
+      { id: "skin2", path: "../../assets/images/skin1.png" },
       { id: "skin3", path: "./images/skin3.svg" },
       { id: "skin4", path: "./images/skin4.svg" },
       { id: "skin5", path: "./images/skin5.svg" },
@@ -50,7 +51,7 @@ class Templates extends Component {
 
   render() {
     return (
-      <div className="templates-container" onLoad={this.props.IsTAPage}>
+      <div className="templates-container" >
         <div className="templates-welcome">
           <div className="temp-wel-cont">
             <h1>Our Templates</h1>
