@@ -8,14 +8,14 @@ import { Link } from "react-router-dom";
 class Templates extends Component {
   state = {
     skins: [
-      { id: "skin1", path: "http://localhost:3000/images/skin1.png" },
-      { id: "skin2", path: "http://localhost:3000/images/skin2.png" },
-      { id: "skin3", path: "http://localhost:3000/images/skin3.svg" },
-      { id: "skin4", path: "http://localhost:3000/images/skin4.svg" },
-      { id: "skin5", path: "http://localhost:3000/images/skin5.svg" },
-      { id: "skin6", path: "http://localhost:3000/images/skin6.svg" },
-      { id: "skin7", path: "http://localhost:3000/images/skin7.svg" },
-      { id: "skin8", path: "http://localhost:3000/images/skin8.svg" },
+      { id: "skin1", path: "./images/skin1.png" },
+      { id: "skin2", path: "./images/skin2.png" },
+      { id: "skin3", path: "./images/skin3.svg" },
+      { id: "skin4", path: "./images/skin4.svg" },
+      { id: "skin5", path: "./images/skin5.svg" },
+      { id: "skin6", path: "./images/skin6.svg" },
+      { id: "skin7", path: "./images/skin7.svg" },
+      { id: "skin8", path: "./images/skin8.svg" },
     ],
     isAuth: null,
   };

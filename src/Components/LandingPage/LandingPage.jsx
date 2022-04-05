@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import { Link } from "react-router-dom";
 import "./LandingPage.css";
 
+
 class LandingPage extends Component {
     // constructor(props) {
     //     super(props)
@@ -66,7 +67,7 @@ class LandingPage extends Component {
                             }
                         </div>
                         <div className="right-cont1">
-                            <img src="http://localhost:3000/images/banner2.png" alt=""></img>
+                            <img src={"./images/banner2.png"} alt="banner"></img>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@ class WbAbout extends Component {
             <div className="about-us-container" onLoad={this.props.IsHomePage} >
                 <div className="about-bg">
                     <h1>About Us</h1>
-                    {/* <img src="./http://localhost:3000/images/bread.jpg" alt="" /> */}
+                    {/* <img src="././images/bread.jpg" alt="" /> */}
                 </div>
                 <div className="whoWe-section">
                     <div className="whoWe-left-col">
@@ -19,34 +19,34 @@ class WbAbout extends Component {
                         <h4>We Deliver The Best</h4>
 
                         <div className="side-feature-list-item">
-                            <img src="http://localhost:3000/images/check.png" className="check-mark-icon" alt="" />
+                            <img src="./images/check.png" className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Proven CV Templates to increase Hiring Chance</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="http://localhost:3000/images/check.png" className="check-mark-icon" alt="" />
+                            <img src="./images/check.png" className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Creative and Clean Templates Design</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="http://localhost:3000/http://localhost:3000/images/check.png" className="check-mark-icon" alt="" />
+                            <img src="././images/check.png" className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Easy and Intuitive Online CV Builder</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="http://localhost:3000/images/check.png" className="check-mark-icon" alt="" />
+                            <img src="./images/check.png" className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Free to use. Developed by hiring professionals.</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="http://localhost:3000/images/check.png" className="check-mark-icon" alt="" />
+                            <img src="./images/check.png" className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Fast Easy CV and Resume Formatting</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="http://localhost:3000/images/check.png" className="check-mark-icon" alt="" />
+                            <img src="./images/check.png" className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Recruiter Approved Phrases.</div>
                         </div>
                     </div>
 
                     <div className="whoWe-right-col">
                         <div className="welcome -meter wow fadeInUp mt-s" data-wow-delay="0.3s" style={{ visibility: "visible", animationDelay: "0.3s", animationName: "fadeInUp", marginTop: "-2%" }}>
-                            <img src="http://localhost:3000/images/cv.png" className="center-block" alt="" />
+                            <img src="./images/cv.png" className="center-block" alt="" />
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ class WbAbout extends Component {
                         <div className="services-block-four">
                             <div className="inner-box">
                                 <div className="icon-img-box">
-                                    <img src="http://localhost:3000/images/d1.png" alt="" />
+                                    <img src="./images/d1.png" alt="" />
                                 </div>
                                 <h3><a href="#">Easy Online Resume Builder</a></h3>
                                 <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda.</div>
@@ -65,7 +65,7 @@ class WbAbout extends Component {
                         <div className="services-block-four">
                             <div className="inner-box">
                                 <div className="icon-img-box">
-                                    <img src="http://localhost:3000/images/d2.png" alt="" />
+                                    <img src="./images/d2.png" alt="" />
                                 </div>
                                 <h3><a href="#">Step By Step Expert Tips</a></h3>
                                 <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda.</div>
@@ -75,7 +75,7 @@ class WbAbout extends Component {
                         <div className="services-block-four">
                             <div className="inner-box">
                                 <div className="icon-img-box">
-                                    <img src="http://localhost:3000/images/d3.png" alt="" />
+                                    <img src="./images/d3.png" alt="" />
                                 </div>
                                 <h3><a href="#">Recruiter Approved Phrases</a></h3>
                                 <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda.</div>
