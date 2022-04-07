@@ -15,7 +15,7 @@ import {
 import LandingPage from "./Components/LandingPage/LandingPage";
 import About from "./Components/About/About";
 import Templates from "./Components/Templates/Templates";
-import Profile from "./Components/Profile/Profile";
+// import Profile from "./Components/Profile/Profile";
 import SignUp from "./Components/SignUp/Signup";
 import Contact from "./Components/Contact/Contact";
 import Education from "./Components/Education/Education";

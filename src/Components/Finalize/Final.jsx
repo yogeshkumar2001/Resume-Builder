@@ -17,7 +17,19 @@ class Final extends React.Component {
   resume = React.createRef();
   state = {
     finalDetails: {
-      contactDetails: {},
+      contactDetails: {
+        city: "new delhi",
+        country: "",
+        email: "kajal@gmail.com",
+        fname: "kajal",
+        lname: "arya",
+        phone: "9599493681",
+        pin: "110059",
+        profession: "android developer",
+        state: "dehi",
+        street: "",
+        summary: "summary",
+      },
       educationDetails: {},
       experienceDetails: {},
       skills: "",
@@ -105,8 +117,8 @@ class Final extends React.Component {
       this.setState({
         confirm: true
       })
+      localStorage.removeItem("selectedResumeId");
     }
-    localStorage.removeItem("selectedResumeId");
 
   }
 
@@ -150,8 +162,8 @@ class Final extends React.Component {
             <ReactToPdf targetRef={this.resume} filename="resume.pdf">
               {({ toPdf }) => (
                 <div className="download-view">
-                  <div className={this.state.mobile ? "download-view-mobile" : "download-view"} onClick={toPdf}>Download Resume</div>
-                  <div className={this.state.mobile ? "download-view-mobile" : "download-view"} onClick={this.saveUserInfo}>Save Resume</div>
+                  <div className={this.state.mobile ? "download-view-mobile" : "download-btn"} onClick={toPdf}>Download Resume</div>
+                  <div className={this.state.mobile ? "download-view-mobile" : "download-btn"} onClick={this.saveUserInfo}>Save Resume</div>
 
                 </div>
 

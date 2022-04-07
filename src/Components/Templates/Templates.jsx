@@ -5,18 +5,25 @@ import firebase from "firebase";
 import initialState from "../../util/initialState";
 import { Link } from "react-router-dom";
 import skin1 from  "../../assets/images/skin1.png"
+import skin2 from  "../../assets/images/skin2.png"
+import skin3 from  "../../assets/images/skin3.svg"
+import skin4 from  "../../assets/images/skin4.svg"
+import skin5 from  "../../assets/images/skin5.svg"
+import skin6 from  "../../assets/images/skin6.svg"
+import skin7 from  "../../assets/images/skin7.svg"
+import skin8 from  "../../assets/images/skin8.svg"
 
 class Templates extends Component {
   state = {
     skins: [
       { id: "skin1", path: skin1 },
-      { id: "skin2", path: "../../assets/images/skin1.png" },
-      { id: "skin3", path: "./images/skin3.svg" },
-      { id: "skin4", path: "./images/skin4.svg" },
-      { id: "skin5", path: "./images/skin5.svg" },
-      { id: "skin6", path: "./images/skin6.svg" },
-      { id: "skin7", path: "./images/skin7.svg" },
-      { id: "skin8", path: "./images/skin8.svg" },
+      { id: "skin2", path: skin2 },
+      { id: "skin3", path: skin3 },
+      { id: "skin4", path: skin4 },
+      { id: "skin5", path: skin5 },
+      { id: "skin6", path: skin6},
+      { id: "skin7", path: skin7 },
+      { id: "skin8", path: skin8 },
     ],
     isAuth: null,
   };

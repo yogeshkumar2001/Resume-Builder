@@ -1,6 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "./WbAbout.css";
+import check from "../../assets/images/check.png";
+import cv from "../../assets/images/cv.png";
+import d1 from "../../assets/images/d1.png";
+import d2 from "../../assets/images/d2.png";
+import d3 from "../../assets/images/d3.png";
 class WbAbout extends Component {
     state = {}
     render() {
@@ -19,34 +24,34 @@ class WbAbout extends Component {
                         <h4>We Deliver The Best</h4>
 
                         <div className="side-feature-list-item">
-                            <img src="./images/check.png" className="check-mark-icon" alt="" />
+                            <img src={check} className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Proven CV Templates to increase Hiring Chance</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="./images/check.png" className="check-mark-icon" alt="" />
+                            <img src={check} className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Creative and Clean Templates Design</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="././images/check.png" className="check-mark-icon" alt="" />
+                            <img src={check} className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Easy and Intuitive Online CV Builder</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="./images/check.png" className="check-mark-icon" alt="" />
+                            <img src={check} className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Free to use. Developed by hiring professionals.</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="./images/check.png" className="check-mark-icon" alt="" />
+                            <img src={check} className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Fast Easy CV and Resume Formatting</div>
                         </div>
                         <div className="side-feature-list-item">
-                            <img src="./images/check.png" className="check-mark-icon" alt="" />
+                            <img src={check} className="check-mark-icon" alt="" />
                             <div className="foot-c-info">Recruiter Approved Phrases.</div>
                         </div>
                     </div>
 
                     <div className="whoWe-right-col">
                         <div className="welcome -meter wow fadeInUp mt-s" data-wow-delay="0.3s" style={{ visibility: "visible", animationDelay: "0.3s", animationName: "fadeInUp", marginTop: "-2%" }}>
-                            <img src="./images/cv.png" className="center-block" alt="" />
+                            <img src={cv} className="center-block" alt="" />
                         </div>
                     </div>
                 </div>
@@ -55,7 +60,7 @@ class WbAbout extends Component {
                         <div className="services-block-four">
                             <div className="inner-box">
                                 <div className="icon-img-box">
-                                    <img src="./images/d1.png" alt="" />
+                                    <img src={d1} alt="" />
                                 </div>
                                 <h3><a href="#">Easy Online Resume Builder</a></h3>
                                 <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda.</div>
@@ -65,7 +70,7 @@ class WbAbout extends Component {
                         <div className="services-block-four">
                             <div className="inner-box">
                                 <div className="icon-img-box">
-                                    <img src="./images/d2.png" alt="" />
+                                    <img src={d2} alt="" />
                                 </div>
                                 <h3><a href="#">Step By Step Expert Tips</a></h3>
                                 <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda.</div>
@@ -75,7 +80,7 @@ class WbAbout extends Component {
                         <div className="services-block-four">
                             <div className="inner-box">
                                 <div className="icon-img-box">
-                                    <img src="./images/d3.png" alt="" />
+                                    <img src={d3} alt="" />
                                 </div>
                                 <h3><a href="#">Recruiter Approved Phrases</a></h3>
                                 <div className="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium modi assumenda.</div>

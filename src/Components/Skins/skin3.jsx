@@ -9,8 +9,8 @@ class Skin3 extends Component {
             skills: "",
             about: {},
             skillsArr: [],
-            achievementArr:[],
-            hobbiesArr : []
+            achievementArr: [],
+            hobbiesArr: []
             // skinId:""
         },
     };
@@ -42,19 +42,19 @@ class Skin3 extends Component {
                 about: lcabout,
                 skills: lcskills,
                 skillsArr: skillsArr,
-                achievementArr:achievementArr,
-                hobbiesArr:hobbiesArr
+                achievementArr: achievementArr,
+                hobbiesArr: hobbiesArr
             },
         });
     }
     render() {
         let CDetails = this.state.finalDetails.contactDetails;
         let edu = this.state.finalDetails.educationDetails;
-        let ED = this.state.finalDetails.experienceDetails;
+        let exp = this.state.finalDetails.experienceDetails;
         let skillsArr = this.state.finalDetails.skillsArr;
         let about = this.state.finalDetails.about;
-        let achievementArr =this.state.finalDetails.achievementArr;
-        let hobbiesArr =this.state.finalDetails.hobbiesArr;
+        let achievementArr = this.state.finalDetails.achievementArr;
+        let hobbiesArr = this.state.finalDetails.hobbiesArr;
         return (
             <div class="skin3-cont" ref={this.props.refProp}>
                 <div class="skin3-incon">
@@ -63,8 +63,8 @@ class Skin3 extends Component {
                             YK
                         </div>
                         <div class="hbox2">
-                            <span>Yogesh</span>
-                            <span style={{ marginLeft: "2%" }}>Kumar</span>
+                            <span>{CDetails.fname}</span>
+                            <span style={{ marginLeft: "2%" }}>{CDetails.lname}</span>
                             <div class="line"></div>
                         </div>
                     </div>
@@ -80,80 +80,70 @@ class Skin3 extends Component {
 
                         </div>
                         <div class="skin3br">
-                            <div class="skin3pd1">Successful sales professional with 10+ years experience in large-scale food
-                                and
-                                retail environments.
-                                Implement cost control measures to ensure operations remain within company targets. Maximize
-                                bottom-line performance through PL, merchandising, staff management, loss control and inventory
-                                management.</div>
+                            <div class="skin3pd1">{CDetails.summary}</div>
                             <div class="skin3pd1">
                                 <div class="dp1">
                                     <ul>
-                                        <li><span>EMAIL : </span>yogeshdavel005@gmail.com</li>
-                                        <li><span>PHONE : </span>9599493681</li>
-                                        <li><span>PROFESSION : </span>Web Developer</li>
+                                        <li><span>EMAIL : </span>{CDetails.email}</li>
+                                        <li><span>PHONE : </span>{CDetails.phone}</li>
+                                        <li><span>PROFESSION : </span>{CDetails.profession}</li>
                                     </ul>
                                 </div>
                                 <div class="pd2">
                                     <ul>
-                                        <li><span>CITY : </span>New Delhi</li>
-                                        <li><span>STATE : </span>Delhi</li>
-                                        <li><span>PIN : </span>110059</li>
+                                        <li><span>CITY : </span>{CDetails.city}</li>
+                                        <li><span>STATE : </span>{CDetails.state}</li>
+                                        <li><span>PIN : </span>{CDetails.pin}</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="skin3pd1">
                                 <ul>
-                                    <li><span>SCHOOL : </span>kendriya vidhalaya</li>
-                                    <li><span>LOCATION : </span>Vikas puri</li>
-                                    <li><span>CGPA : </span>8.0</li>
+                                    <li><span>SCHOOL : </span>{edu.school}</li>
+                                    <li><span>LOCATION : </span>{edu.schoolLocation}</li>
+                                    <li><span>CGPA : </span>{edu.schoolCgpa}</li>
                                 </ul>
-                                <ul class="cl-ul">
-                                    <li><span>COLLEGE : </span>SAITM</li>
-                                    <li><span>LOCATION : </span>gurgoan</li>
-                                    <li><span>CGPA : </span>8.0</li>
-                                    <li><span>DEGREE : </span>8.0</li>
-                                    <li><span>STREAM : </span>8.0</li>
-                                </ul>
-                            </div>
-                            <div class="skin3pd1">
-                                <ul>
-                                    <li><span>COMPANY : </span>flipkart</li>
-                                    <li><span>JOB TITLE : </span>web developer</li>
-                                    <li><span>POSITION : </span>junior</li>
-                                </ul>
-                                <ul class="ex-ul">
-                                    <li><span>START DATE : </span>2022-01-30</li>
-                                    <li><span>END DATE : </span>2022-03-05</li>
-                                    <li><span>CITY : </span>Uttar pradesh</li>
+                                <ul class="skin5-cl-ul">
+                                    <li><span>COLLEGE : </span>{edu.collegeName}</li>
+                                    <li><span>LOCATION : </span>{edu.collegeLocation}</li>
+                                    <li><span>CGPA : </span>{edu.collegeCgpa}</li>
+                                    <li><span>DEGREE : </span>{edu.degree}</li>
+                                    <li><span>STREAM : </span>{edu.field}</li>
                                 </ul>
                             </div>
                             <div class="skin3pd1">
                                 <ul>
-                                    <li>flipkart</li>
-                                    <li>web developer</li>
-                                    <li>junior</li>
+                                    <li><span>COMPANY : </span>{exp.companyName}</li>
+                                    <li><span>JOB TITLE : </span>{exp.jobTitle}</li>
+                                    <li><span>POSITION : </span>{exp.position}</li>
                                 </ul>
-                                <ul class="sl-ul">
-                                    <li>flipkart</li>
-                                    <li>web developer</li>
-                                    <li>junior</li>
+                                <ul class="skin5-ex-ul">
+                                    <li><span>START DATE : </span>{exp.startDate}</li>
+                                    <li><span>END DATE : </span>{exp.endDate}</li>
+                                    <li><span>CITY : </span>{exp.state}</li>
+                                </ul>
+                            </div>
+                            <div class="skin3pd1">
+                                <ul>
+                                    {skillsArr.map(skill => {
+                                        return (<li>{skill}</li>)
+                                    })}
                                 </ul>
                             </div>
                             <div class="skin3pd1">
 
-                                <ul>
-                                    <li>Flipkart</li>
-                                    <li>Web developer</li>
-                                    <li>Junior</li>
-                                </ul>
+                                {achievementArr.map(achievement => {
+                                    return (<ul>
+                                        <li>{achievement}</li>
+                                    </ul>)
+                                })}
                             </div>
                             <div class="skin3pd1">
-                                <ul>
-                                    <li>Flipkart</li>
-                                    <li>Web developer</li>
-                                    <li>Junior</li>
-                                </ul>
+                                {hobbiesArr.map(hobbie => {
+                                    return (<ul>
+                                        <li>{hobbie}</li>
+                                    </ul>)
+                                })}
                             </div>
                         </div>
                     </div>

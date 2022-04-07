@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import logo from "../../assets/images/logo.png"
 
 import "./Navbar.css";
 
@@ -64,7 +65,7 @@ class Navbar extends Component {
 
               <div className="logo" >
                 <Link to="/">
-                  <img src="./images/logo.png" alt="" />
+                  <img src={logo} alt="" />
                   <span style={{ marginLeft: "4%" }}>Resume Builder</span>
                 </Link>
               </div>

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import firebaseApp from "../../firebase/firebaseConfig";
 import "./userProfile.css";
+import loading from "../../assets/images/logg.gif";
 class UserProfile extends Component {
     state = {
         myResumesList: [],
@@ -142,7 +143,7 @@ class UserProfile extends Component {
                     </React.Fragment>
                 ) : (
                     <div className="loader-svg">
-                        <img src="./images/logg.gif" alt="" />
+                        <img src={loading} alt="" />
                     </div>
                 )}
             </div>
