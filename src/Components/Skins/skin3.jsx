@@ -56,7 +56,7 @@ class Skin3 extends Component {
         let achievementArr = this.state.finalDetails.achievementArr;
         let hobbiesArr = this.state.finalDetails.hobbiesArr;
         return (
-            <div class="skin3-cont" ref={this.props.refProp}>
+            <div class={this.props.mobile == true ? "skin3-cont-mobile" : "skin3-cont"} ref={this.props.refProp} >
                 <div class="skin3-incon">
                     <div class="skin3b1">
                         <div class="hbox1">

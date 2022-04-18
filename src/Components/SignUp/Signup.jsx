@@ -122,9 +122,11 @@ class SignUp extends Component {
                         placeholder="Password"
                       />
                     </div>
+                    <div className="error">{this.state.error}</div>
                     <div class="login-btn" onClick={this.signUpHandler} >SIGN UP</div>
                   </div>
                 </div>
+                
               </div>
             </div>
           </div>)

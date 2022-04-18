@@ -23,7 +23,7 @@
   color: white;
 } */
 
-@media only screen and (max-width: 320px)  {
+@media only screen and (max-width:500px)  {
   .home-page-container1 {
     /* background: gray; */
 
@@ -139,5 +139,16 @@ flex-direction: column !important;
 .choose-us-right {
   width: 80% !important;
   /* margin-left: 10%; */
+}
+.resume-view-container {
+  flex-direction: column !important;
+}
+.signup-container {
+  height: 100% !important;
+  width: 100% !important;
+}
+.signin-container {
+  height: 100% !important;
+  width: 100% !important;
 }
 }

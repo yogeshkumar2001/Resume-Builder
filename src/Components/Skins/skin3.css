@@ -1,11 +1,14 @@
-* {
-    margin: 0x;
-    box-sizing: 0px;
-  }
+
   .skin3-cont {
     width: 21cm;
     height: 29.7cm;border: 
     1px solid;
+  }  
+  .skin3-cont-mobile {
+    width: 21cm;
+    height: 29.7cm;border: 
+    1px solid;
+    display: none;
   }
   .skin3-incon {
     height: 100%;

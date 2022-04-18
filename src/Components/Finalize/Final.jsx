@@ -128,7 +128,7 @@ class Final extends React.Component {
     let skinId = this.state.skinId;
     let tskin;
     if (skinId == "skin1") {
-      tskin = <Skin1 refProp={this.resume} mobile={this.state.mobile}></Skin1>
+      tskin = <Skin1 refProp={this.resume} mobile={this.state.mobile} ></Skin1>
     } else if (skinId == "skin2") {
       tskin = <Skin2 refProp={this.resume} mobile={this.state.mobile}></Skin2>
     } else if (skinId == "skin3") {
@@ -154,7 +154,11 @@ class Final extends React.Component {
           this.state.confirm == false ? (<div className="resume-view-container">
             <div className="resume-view" >
               <React.Fragment>
-                {this.state.mobile == true ? <h1>download your resume for view </h1> : ""}
+                {this.state.mobile == true ? <div className="downloadpdf">
+                <div className="pdf-text">
+                Download Your Resume For View 
+                </div>
+                </div> : ""}
                 {tskin}
                 {/* {this.state.mobile ==true ? (h1)} */}
               </React.Fragment>

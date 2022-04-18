@@ -1,166 +1,152 @@
-.final{
-height: 100vh;
-width: 98vw;
+.final {
+  height: 100vh;
+  width: 98vw;
 }
 .download-view-mobile {
   /* border: 1px solid green; */
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-  align-items: center;
+  background: #3e94e4;
   height: 50%;
+  width: 100%;
+  border-radius: 8px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2%;
   /* justify-content: center; */
 }
-.resume-view-container{
-    /* height: 100%; */
-    width: 100%;
-    /* border: 1px solid; */
-    display: flex;
-    justify-content: space-evenly;
+.download-view-mobile:hover {
+  background-color: white;
+  color: blue;
+}
+.resume-view-container {
+  /* height: 100%; */
+  width: 100%;
+  /* border: 1px solid; */
+  display: flex;
+  justify-content: space-evenly;
 }
 /* .download-view{
     /* border: 1px solid green; */
-    /* display: flex;
+/* display: flex;
     width: 100%;
     flex-direction: column;
     align-items: center; */
-    /* justify-content: center; */
+/* justify-content: center; */
 /* }  */
-.download-btn{
-    border: 1px solid green;
-    width:100%;
-    height: 4%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.download-btn {
+  border: 1px solid green;
+  width: 100%;
+  height: 4%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.download-btn:hover{
-    background: #2475FD;
-    color: white;
-    cursor: pointer;
+.download-btn:hover {
+  background: #2475fd;
+  color: white;
+  cursor: pointer;
 }
-/* city: ""
-country: ""
-email: ""
-fname: "Yogesh"
-lname: ""
-phone: ""
-pin: ""
-profession: ""
-state: ""
-street: ""
-summary: "" */
-
-
-/* aboutCompany: ""
-city: ""
-companyName: ""
-endDate: ""
-jobTitle: ""
-position: ""
-startDate: ""
-state */
-
-/* collegeCpga: ""
-collegeLocation: ""
-collegeName: ""
-degree: ""
-field: ""
-gEndDate: ""
-gStartDate: ""
-schoolCpga: ""
-schoolLocation: ""
-schoolName: "" */
-
-/* achievement: ""
-hobbies: "" */
-
-/* /// */
+.downloadpdf {
+  background: linear-gradient(to right, #21d397 0%, #7450fe 100%);
+  height: 40vh;
+  width: 100vw;
+  margin-top: 2%;
+  margin-bottom: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: xx-large;
+}
+.pdf-text {
+  padding: 2%;
+}
 
 .user-form-container {
-    width: 100vw;
-    height: 100vh;
-  }
-  .user-form {
-    /* border: 1px solid red; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-    width: 50%;
-    height: 90%;
-    margin: 2% 20% 0% 25%;
-  }
-  .user-form-details {
-    height: 100%;
-    width: 100%;
-  }
-  .form-floating {
-    width: 45%;
-    margin-left: 4%;
-  }
-  .form-floating input {
-    border: 0px solid transparent;
-    border-bottom: 0.1rem solid #cec8c8;
-    border-radius: 0px;
-  }
-  .mb-3 label {
-  }
-  .form-control:focus {
-    border-color: #b7d7bb;
-  }
-  .deatils {
-    display: flex;
-  }
-  .address {
-    width: 94%;
-  }
-  .headings {
-    display: flex;
-    justify-content: center;
-    font-size: xx-large;
-  }
-  
-  .far {
-    margin-top: 5%;
-    margin-bottom: 2%;
-  
-    font-size: 300%;
-    color: yellowgreen;
-  }
-  .order-confirmation {
-    margin-top: 3%;
-  }
-  
-  .order-deatils {
-    text-align: center;
-    margin-top: 1%;
-    font-size: larger;
-    background-color: rgb(235, 248, 243);
-  }
-  .order-info {
-    font-size: medium;
-  }
-  .msgs p {
-  
-    text-align: center;
-    line-height: 170%;
-  }
-  .msgs p:nth-child(3) {
-    text-decoration-line: underline;
-  }
-  .wb-btn{
-    border: 1px solid;
-    height: 2rem;
-    width: 20%;
-    margin: 0% 40%;
-    border-radius: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-  }
-.confirm-img{
-    display: flex;
-    justify-content: center;
+  width: 100vw;
+  height: 100vh;
 }
-.confirm-img img{
-width: 50%;
-}  
+.user-form {
+  /* border: 1px solid red; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 50%;
+  height: 90%;
+  margin: 2% 20% 0% 25%;
+}
+.user-form-details {
+  height: 100%;
+  width: 100%;
+}
+.form-floating {
+  width: 45%;
+  margin-left: 4%;
+}
+.form-floating input {
+  border: 0px solid transparent;
+  border-bottom: 0.1rem solid #cec8c8;
+  border-radius: 0px;
+}
+.mb-3 label {
+}
+.form-control:focus {
+  border-color: #b7d7bb;
+}
+.deatils {
+  display: flex;
+}
+.address {
+  width: 94%;
+}
+.headings {
+  display: flex;
+  justify-content: center;
+  font-size: xx-large;
+}
+
+.far {
+  margin-top: 5%;
+  margin-bottom: 2%;
+
+  font-size: 300%;
+  color: yellowgreen;
+}
+.order-confirmation {
+  margin-top: 3%;
+}
+
+.order-deatils {
+  text-align: center;
+  margin-top: 1%;
+  font-size: larger;
+  background-color: rgb(235, 248, 243);
+}
+.order-info {
+  font-size: medium;
+}
+.msgs p {
+  text-align: center;
+  line-height: 170%;
+}
+.msgs p:nth-child(3) {
+  text-decoration-line: underline;
+}
+.wb-btn {
+  border: 1px solid;
+  height: 2rem;
+  width: 20%;
+  margin: 0% 40%;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.confirm-img {
+  display: flex;
+  justify-content: center;
+}
+.confirm-img img {
+  width: 50%;
+}

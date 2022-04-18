@@ -51,13 +51,14 @@ class Navbar extends Component {
             <div id="myNav" className="overlay">
               <a href="javascript:void(0)" className="closebtn" onClick={() => { this.closeNav() }}>&times;</a>
               <div class="overlay-content">
+                <Link to="/home">Home</Link>
                 <Link to="/about-page">About</Link>
                 <Link to="/templates">Templates</Link>
                 <Link to="/user-profile">Profile</Link>
                 <Link to="/myresume">My Resumes</Link>
-                <Link to="/signin">Sign In</Link>
+                {this.state.isAuth == false ? <Link to="/signin">Sign In</Link> : <></>}
                 <Link to="/signup">Sign Up</Link>
-                {this.state.isAuth ? <Link to="/signup">Logout</Link> : <div></div>}
+                {this.state.isAuth == true ? <Link to="/signup">Logout</Link> : <div></div>}
                 
               </div>
             </div>
@@ -85,7 +86,7 @@ class Navbar extends Component {
                       <Link to="/myresume">My Resumes</Link>
                     </li>
                     <li>
-                      <Link to="/" onClick={this.props.logout}>Logout</Link>
+                      <Link to="/home" onClick={this.props.logout}>Logout</Link>
                     </li>
                   </ul>
                 </div>

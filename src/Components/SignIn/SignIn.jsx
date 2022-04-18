@@ -6,7 +6,8 @@ import "./SignIn.css"
 class SignIn extends Component {
   state = {
     id: "",
-    pw: ""
+    pw: "",
+    error:""
   };
 
 
@@ -68,7 +69,7 @@ class SignIn extends Component {
   render() {
     return (
       <React.Fragment>
-        {this.props.isAuth ? <Redirect></Redirect> : (<div class="signin-page">
+        { this.props.isAuth ? <Redirect ></Redirect> :(<div class="signin-page">
           <div class="signin-container">
             <div class="signin-inner">
               <div class="signin-box">
@@ -97,6 +98,7 @@ class SignIn extends Component {
                       placeholder="password"
                     />
                   </div>
+                  <div className="error">{this.props.error}</div>
                   <div class="login-btn" onClick={() => { this.props.login(this.state.id, this.state.pw) }} >LOGIN</div>
                 </div>
               </div>

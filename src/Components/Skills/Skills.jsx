@@ -99,7 +99,7 @@ class Skills extends React.Component {
           <div className="skin-img-container">
             <img src={this.state.skinPath} alt="" />
           </div>
-          <div class="skill-add-btn" onClick={this.addSkillInput}>Add skills</div>
+          {/* <div class="skill-add-btn" onClick={this.addSkillInput}>Add skills</div> */}
         </div>
         <template id="input-template">
           <div class="form-floating mb-3 skill" >
